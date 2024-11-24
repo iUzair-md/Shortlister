@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+
+.containerdashboard {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.939),
+      rgba(41, 40, 40, 0.817)
+    ),
+    url(" ") center;
+  background-color: rgb(193, 190, 255);
+  font-family: "Maven Pro", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  height: 100vh;
+  padding: 0px 35px; /* Add padding to container */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  .boxx {
+    // box-shadow: 0 0 35px rgb(0, 0, 0), 5px 5px 10px rgba(255, 255, 255, 0);
+    height: 91%;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5),
+          /* bottom-right */ -5px -5px 5px rgba(255, 255, 255, 0.5),
+          /* top-left */ 6px -6px 5px rgba(0, 0, 0, 0.5),
+          /* top-right */ -5px 5px 10px rgba(255, 255, 255, 0.5); 
+    background-color: rgba(10, 75, 113, 0.715);
+    width: 100%;
+    margin: auto; /* Add this line */
+    display: flex;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .box1 {
+      padding: 20px 10px 20px 20px;
+      grid-column: 1 / 2;
+      display: flex;
+      gap: 25px;
+      flex-direction: column;
+      .topdiv {
+        // background-color: rgb(255, 255, 255);
+        border-radius: 11px;
+        flex: 1;
+        display: grid;
+        grid-column-gap: 20px;
+        display: flex;
+        .imagediv {
+          flex: 5;
+          img {
+            box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5),
+              /* bottom-right */ -6px -6px 10px rgba(255, 255, 255, 0.5),
+              /* top-left */ 6px -6px 5px rgba(0, 0, 0, 0.5),
+              /* top-right */ -6px 6px 10px rgba(255, 255, 255, 0.5); /* bottom-left */
+          }
+        }
+        .infodiv {
+          
+          font-size: 21px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          color: rgb(210, 208, 208);
+          justify-content: center;
+          flex: 9;
+          background-color: rgba(10, 75, 113, 0.715);
+
+          h1 {
+            border-radius: 10px;
+            padding: 21px;
+          }
+        }
+      }
+      .bottomdiv {
+        flex: 2;
+        height: inherit;
+        display: grid;
+        border-radius: 11px;
+        grid-column-gap: 20px;
+        display: flex;
+        .skillsection {
+         
+          border-radius: 10px;
+          background-color: rgba(10, 75, 113, 0.715);
+          flex: 1;
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+
+          .skillssetdiv {
+          }
+          .buttonsdiv {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            button {
+              color: white;
+              padding: 11px;
+              border-radius: 10px;
+              background-color: rgba(108, 175, 213, 0.676);
+              &:hover {
+                background-color: rgba(10, 75, 113, 0.533);
+              }
+            }
+          }
+        }
+        .scoresection {
+          box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.5),
+          /* bottom-right */ -5px -5px 5px rgba(255, 255, 255, 0.5),
+          /* top-left */ 6px -6px 5px rgba(0, 0, 0, 0.5),
+          /* top-right */ -5px 5px 10px rgba(255, 255, 255, 0.5); 
+          background-color: rgba(10, 75, 113, 0.715);
+          border-radius: 10px;
+          flex: 2;
+        }
+      }
+    }
+
+    .box2 {
+      padding: 20px;
+      overflow: auto;
+      word-wrap: break-word;
+      grid-column: 2 / 3;
+
+      .gptarea {
+        box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5),
+          /* bottom-right */ -1px -1px 5px rgba(255, 255, 255, 0.5),
+          /* top-left */ 6px -6px 5px rgba(0, 0, 0, 0.5),
+          /* top-right */ -1px 1px 10px rgba(255, 255, 255, 0.5); /* bottom-left */
+        overflow: auto;
+        border-radius: 10px;
+        height: 100%;
+        overflow-wrap: break-word;
+
+        background-color: rgb(255, 255, 255);
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}

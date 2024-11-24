@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+.login {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.939),
+      rgba(41, 40, 40, 0.817)
+    ),
+    url(" ") center;
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    height: 100vh;
+    padding: 18px;
+  }
+  .box {
+    background: linear-gradient(
+        rgba(24, 31, 45, 0.817),
+        rgba(24, 31, 45, 0.817)
+      ),
+      url("images/CV-Cartoon.jpeg");
+    background-size: cover;
+    color: rgb(221, 221, 221);
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgb(0, 0, 0), 5px 5px 10px rgba(255, 255, 255, 0); /* Inner shadow + outer shadow */
+    @media (max-width: 768px) {
+      height: 100%;
+      border-radius: 10px;
+      width: 100%;
+    }
+    .card {
+      display: flex;
+      width: 88%;
+      height: 80%;
+      display: flex;
+      flex-direction: row;
+      border-radius: 10px;
+
+      min-height: 580px;
+      overflow: hidden;
+      @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .left {
+        flex: 3;
+        padding: 40px 40px 40px 40px;
+        display: flex;
+        flex-direction: column;
+        color: rgb(221, 221, 221);
+        font-size: 22px;
+        justify-content: center;
+        gap: 30px;
+        @media (max-width: 768px) {
+          padding: 10px;
+          font-size: 15px;
+      }
+
+        h2 {
+          margin: 0%;
+          font-size: 40px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        .registered {
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          button {
+            width: 25%;
+            padding: 10px;
+            border: none;
+            background-color: white;
+            color: rebeccapurple;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            &:hover {
+              background-color: rgb(209, 208, 208);
+            }
+          }
+        }
+      }
+      .right {
+        margin: 10px;
+        box-shadow: 0 0 10px rgb(239, 237, 237), 5px 5px 10px rgba(0, 0, 0, 0);
+        background-color: white;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        border-radius: 15px;
+        gap: 50px;
+        @media (max-width: 768px) {
+          padding: 50px 30px 50px 30px;
+          gap: 30px;
+        }
+        h1 {
+          color: #555;
+          font-size: 18px;
+          @media (max-width: 768px) {
+           padding: 7px;
+          }
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          @media (max-width: 768px) {
+            font-size: 15px;
+            gap: 30px;
+          }
+          input {
+            border: none;
+            border-bottom: 1px solid lightgray;
+            padding: 20px 10px;
+          }
+          button {
+            width: 50%;
+            padding: 10px;
+            border: none;
+            background-color: #938eef;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+
+            cursor: pointer;
+            border-radius: 5px;
+            &:hover {
+              background-color: #5e59b3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

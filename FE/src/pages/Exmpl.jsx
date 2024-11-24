@@ -1,0 +1,9 @@
+import React from 'react'
+
+const Exmpl = () => {
+  return (
+    <div>ExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmplExmpl</div>
+  )
+}
+
+export default Exmpl
